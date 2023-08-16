@@ -1,0 +1,123 @@
+@media (min-width: 1730px){
+  .imgContainer img {
+ height: clamp(42.5rem, 4.7214rem + 34.9398vw, 70rem);
+
+    }
+}
+
+@media (max-width: 1120px){
+    .headerSection{
+        justify-content: space-between;
+        padding: 0 25px;
+    }
+    .navContainer{
+        display: none;
+    }
+    .navContainer {
+        z-index: 10;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background:#271d3bce;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      #exitBurger{
+        height: 50px;
+      }
+      .navContainer label {
+        padding: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .navContainer ul {
+        flex-direction: column;
+        text-align: center;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      #burgerMenu:checked + .navContainer {
+        display: block;
+      }
+
+  #hotSale {
+ 
+  color:rgb(236, 206, 32) ; 
+ }
+
+    .loggin-register{
+        display: none;
+    }
+    .headerSection label{
+        display: block;
+      }
+
+      .headerSection--loggin-register{
+        width: 70%;  
+        align-items: center;
+     }
+    
+    .burger--loggin-register{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 35px;
+    }
+    .burger--loggin-register ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+      }
+      
+      .burger--loggin-register ul li a{
+         font-size: clamp(0.75rem, 0rem + 3.3333vw, 1.25rem);;
+        color: var(--whiteColor);
+      }   
+      .burger--loggin-register ul li a:hover{
+        transition: all 500ms;
+        color: rgb(243, 243, 69);
+      }
+
+      .div12 { display: none !important; }
+      .div13 {  display: none !important;}
+
+
+      .womanManContainer{
+        flex-wrap: wrap;
+      }
+      .womanClothing{
+        width: 100%;
+      }
+}
+@media (max-width: 600px){
+    .headerSection {
+        height: 60px;
+      }
+    .headerSection img{
+        height: 70px;
+      }
+    .headerSection{
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+
+    .burger--loggin-register{
+        width: 100%;  
+        gap: 15px;
+    }
+    .burger--loggin-register ul{
+        gap: 10px;
+      }
+
+}
